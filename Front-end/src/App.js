@@ -3,7 +3,7 @@ import './App.css';
 import React from "react";
 import Home from './Componenets/Home';
 import Contact from './Componenets/Contact'
-import About from './Componenets/About'; 
+// import About from './Componenets/About'; 
 import { Route, Routes, Outlet } from "react-router-dom";
 import CartPage from './Componenets/CartPage';
 import ProductContainer from './Componenets/ProductContainer';
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Products" element={<ProductContainer/>}/>
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
+        {/* <Route path="/About" element={<About />} /> */}
         <Route path='/ProductDetail/:id' element={<ProductDetail/>}/>
         <Route path='/CartPage' element={<CartPage/>}/>
         <Route path='/Usermanage' element={<Usermanage/>}/>
