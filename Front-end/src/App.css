@@ -1,0 +1,210 @@
+/* styles.css */
+
+/* Adjust the hover color for the NavLinks in the Navbar */
+.navbar .nav-link:hover {
+    background-color: #f8f9fa; /* Set your desired hover background color */
+    color: #000; /* Set your desired hover text color */
+  }
+  
+  /* Apply the hover effect to the NavDropdown */
+  .navbar .nav-link.dropdown-toggle:hover,
+  .navbar .dropdown-menu:hover {
+    display: block; /* Show the dropdown menu on hover of the dropdown toggle or dropdown menu itself */
+  }
+  
+  /* Keep the dropdown menu open when hovering over it */
+  .navbar .dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+  }
+  
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu when hovering over the dropdown */
+  }
+  .navbar-brand-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* CSS File */
+
+
+.checkout-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  margin-left: 20px;
+}
+
+
+.checkout-items {
+  margin-bottom: 20px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.checkout-item img {
+  max-width: 60px;
+  margin-right: 10px;
+}
+
+.checkout-total {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkout-total div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-total span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .checkout-section {
+      margin-top: 20px;
+    }
+  }
+ 
+  
+  @media (max-width: 768px) {
+    .navbar-brand-container {
+      margin: left 0px;;
+    }
+  }
+  /* Styles for the sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hide the sidebar on smaller screens */
+.hidden {
+  transform: translateX(-100%);
+}
+
+/* Styles for the toggle button */
+.toggle-button {
+  display: none;
+  background-color: #f0f0f0;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Styles for the filters */
+.filters {
+  margin-top: 20px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  /* Show the sidebar when the toggle button is clicked */
+  .hidden {
+    transform: translateX(0);
+  }
+}
+/* Add this CSS to your existing styles */
+/* PopupForm.css */
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+
+.popup {
+  /* Update the styles for the popup */
+  background-color: #fff;
+  padding: 40px; /* Increase the padding for more space */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 600px; /* Set a maximum width for the popup */
+  width: 100%;
+}
+.popup form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Increase the margin for form elements */
+}
+.popup label,
+.popup input,
+.popup button {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.para{
+  color:#000000;
+}
+.background{
+background-color:#ffffff,
+}
+.primarys{
+background-color: #2b66e5 ;
+}
+.secondary{
+  background-color: #ebe4e4;
+}
+
+.accent{
+  background-color: #030303;
+}

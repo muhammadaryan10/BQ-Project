@@ -1,0 +1,29 @@
+// const { Password } = require("@mui/icons-material");
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    require: true,
+  },
+  email: {
+    type: String,
+    require: true,
+    unique: true,
+  },
+  Phone: {
+    type: Number,
+    require: false,
+  },
+  password: {
+    type: String,
+    require: true,
+  },
+  token: { 
+    type: String
+}
+});
+
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
